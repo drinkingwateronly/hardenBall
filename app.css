@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: monospace
+}
+
+h1 {
+    text-align: center;
+}
+
+.animate{
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes ohboy{
+    0%, 25%, 50%, 75%, 100%{
+        transform: translateY(0);
+    }
+    12%{
+        transform: translateY(-15px);
+    }
+    37%{
+        transform: translateY(-45px);
+    }
+    63%{
+        transform: translateY(-15px);
+    }
+    87%{
+        transform: translateY(-30px);
+    }
+}
+
+.ohboy{
+    animation-name: ohboy;
+    animation-timing-function: ease;
+    transition: transform 0.3s;
+}
+
+.ohboy:hover{
+    transform: translateY(-10px);
+}
